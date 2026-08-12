@@ -38,13 +38,14 @@ body {
 }
 
 .page-container {
-  max-width: 64rem;
+  max-width: 1200px;
+  width: min(1200px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 4rem 2rem;
 }
 
 .hero {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid var(--border);
 }
@@ -52,31 +53,34 @@ body {
 .site-title {
   margin: 0 0 0.75rem;
   color: var(--white);
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 700;
   letter-spacing: -0.04em;
+  line-height: 1.1;
 }
 
 .subtitle {
   margin: 0 0 1.5rem;
   color: var(--accent);
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   font-weight: 500;
 }
 
 .hero-text {
-  max-width: 42rem;
+  max-width: 72rem;
   margin: 0 0 2rem;
   color: var(--text);
-  font-size: 1.125rem;
-  line-height: 1.7;
-  opacity: 0.9;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.95;
+  text-align: left;
 }
 
 .social-links {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: flex-start;
 }
 
 .link-button {
@@ -102,10 +106,11 @@ body {
 }
 
 .section-title {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.75rem;
   color: var(--white);
-  font-size: clamp(1.75rem, 4vw, 2rem);
+  font-size: clamp(2rem, 3vw, 2.5rem);
   font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .skills-grid,
@@ -197,13 +202,28 @@ body {
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .page-container {
-    padding: 2rem 1rem;
+    width: min(100%, calc(100% - 24px));
+    padding: 2.5rem 0.75rem;
   }
 
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  .hero-text {
+    font-size: 1.05rem;
   }
 }
