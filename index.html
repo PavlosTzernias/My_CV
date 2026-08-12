@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Παύλος Τζερνιάς - Personal Website</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen selection:bg-teal-300 selection:text-slate-900">
+
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Hero Section -->
+    <header class="mb-16 border-b border-slate-800 pb-12">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white mb-3">
+        Παύλος Τζερνιάς
+      </h1>
+      <p class="text-xl text-teal-400 font-medium mb-6">
+        B.Sc. in Computer Science | Software Developer
+      </p>
+      <p class="text-slate-300 leading-relaxed text-lg max-w-2xl mb-8">
+        Είμαι 25 ετών, πτυχιούχος του Τμήματος Επιστήμης Υπολογιστών του Πανεπιστημίου Κρήτης. 
+        Μιλάω αγγλικά, ενώ διακρίνομαι για τη συνέπεια, την υπευθυνότητα και τη συνεργασιμότητά μου. 
+        Μου αρέσει να λύνω πρακτικά προβλήματα μέσω της τεχνολογίας, να ασχολούμαι με δημιουργικά projects 
+        και να μαθαίνω συνεχώς νέα πράγματα.
+      </p>
+
+      <!-- Social / Contact Links -->
+      <div class="flex flex-wrap gap-4">
+        <a href="mailto:your.email@example.com" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-lg transition-colors border border-slate-700">
+          Email
+        </a>
+        <a href="https://github.com" target="_blank" rel="noreferrer" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-lg transition-colors border border-slate-700">
+          GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-lg transition-colors border border-slate-700">
+          LinkedIn
+        </a>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-white mb-6">
+        Δεξιότητες
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-800">
+          <div class="text-teal-400 font-semibold mb-4">Γλώσσες</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">C</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">C++</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">Java</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">Python</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">JavaScript</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">SQL</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-800">
+          <div class="text-teal-400 font-semibold mb-4">Web & Mobile</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">React</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">React Native</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">HTML5</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">CSS3</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-800">
+          <div class="text-teal-400 font-semibold mb-4">Εργαλεία</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">Git</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">GitHub</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">VS Code</span>
+            <span class="bg-slate-700/60 text-slate-300 text-sm px-3 py-1 rounded-md">Linux</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-white mb-6">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-2">Tichu Score Counter</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              Mobile εφαρμογή υπολογισμού και καταγραφής σκορ για το παιχνίδι Tichu, σχεδιασμένη για γρήγορη και εύκολη χρήση.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="text-xs font-mono text-teal-300 bg-teal-950/60 border border-teal-800/50 px-2 py-1 rounded">React Native</span>
+            <span class="text-xs font-mono text-teal-300 bg-teal-950/60 border border-teal-800/50 px-2 py-1 rounded">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-2">Πτυχιακή Εργασία</h3>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+              Έρευνα και ανάπτυξη στο πλαίσιο της ολοκλήρωσης των σπουδών στο Τμήμα Επιστήμης Υπολογιστών.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="text-xs font-mono text-teal-300 bg-teal-950/60 border border-teal-800/50 px-2 py-1 rounded">Computer Science</span>
+            <span class="text-xs font-mono text-teal-300 bg-teal-950/60 border border-teal-800/50 px-2 py-1 rounded">Research</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-slate-500 text-sm pt-8 border-t border-slate-800">
+      © <span id="year"></span> Παύλος Τζερνιάς. Built with HTML, CSS & JS.
+    </footer>
+
+  </div>
+
+  <script>
+    // Αυτόματο έτος στο footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
