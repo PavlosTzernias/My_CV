@@ -23,3 +23,28 @@ themeToggle.addEventListener('click', () => {
     themeToggle.querySelector('.theme-icon').textContent = '🌙';
   }
 });
+
+// Scroll animations with Intersection Observer
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in-up');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Observe all skill, project, and interest cards
+document.querySelectorAll('.skill-card, .project-card, .interest-card').forEach(el => {
+  observer.observe(el);
+});
+
+// Observe section titles
+document.querySelectorAll('.section-title').forEach(el => {
+  observer.observe(el);
+});
